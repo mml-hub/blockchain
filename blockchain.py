@@ -289,6 +289,9 @@ def consensus():
 
     return jsonify(response), 200
 
+@app.route('/')
+def index():
+    return "Blockchain API is running!"
 
 if __name__ == '__main__':
     from argparse import ArgumentParser
